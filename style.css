@@ -116,3 +116,11 @@ body {
     font-size: 30px;
     font-weight: 400px;
   }
+
+  #datepick {
+    border-radius: 12px;
+    padding: 7px;
+    border: none;
+    background-color: #3571b1;
+    color: #ffffff;
+  }

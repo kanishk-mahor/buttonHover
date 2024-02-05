@@ -16,9 +16,23 @@
       </div>
       <div class="fix_date">
           Let's Fix a Date
+          <form id="form">
+            <!-- <label for="birthday">Birthday:</label> -->
+            <input type="date" id="datepick" name="datepick" value="pick a date">
+            <input type="submit" value= "send" style="padding: 7px; border-radius: 50px; background-color: #3571b1; color: #ffffff; border:none">
+          </form>
       </div>
       <!-- <button class="btn" id="yesButton" onclick="nextPage()">
       </button> -->
+      <script>
+        function logSubmit(event) {
+            const date = document.getElementById("datepick").value
+            window.location.href = `https://wa.me/+918959758484?text=I am free on ${date} \n Let's catch up`
+            event.preventDefault();
+        }    
+        const form = document.getElementById("form");
+        form.addEventListener("submit", logSubmit);
+      </script>
     </div>
   </body>
 </html>
